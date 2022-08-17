@@ -13,4 +13,4 @@ A Variational Autoencoder (VAE) with a Recurrent Neural Network (RNN) in the lat
 I trained the model using gradient descent to optimize loss with respect to parameters of the encoder / decoder.
 
 ### Optimizations
-I incorporated a present reconstruction via a secondary decoder, and added predictive prior distribution as a KL divergence term to the loss function.
+First, I incorporated a present reconstruction via a second decoder and loss variable, Then, I added a predictive prior distribution that is trained through a second RNN and contributes to the loss function with a KL Divergence term. I combined these two optimizations into a third model, which is the version included in this repository.
